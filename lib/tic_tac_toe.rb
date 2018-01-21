@@ -117,7 +117,7 @@ end
 
 def play(board)
   turns = 0
-  until turns == 9 do
+  until over(board) == true do
     turn(board)
     turns += 1
   end
