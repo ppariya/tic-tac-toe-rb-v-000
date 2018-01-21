@@ -100,7 +100,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if full?(board) == true || won?(board)} || draw?(board)
+  if full?(board) == true || won?(board) || draw?(board)
     true
   else
     false
