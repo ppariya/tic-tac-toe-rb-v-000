@@ -118,10 +118,10 @@ end
 def play(board)
   until over?(board) == true do
     turn(board)
-    if won?(board) == true
-      puts "Congratulations "+ winner(board) +"!"
-    else draw? == true
-      puts "Cat's Game!"
-    end
+  end
+  if won?(board) == true
+    puts "Congratulations "+ winner(board) +"!"
+  else draw? == true
+    puts "Cat's Game!"
   end
 end
