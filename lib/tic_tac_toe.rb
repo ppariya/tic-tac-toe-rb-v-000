@@ -116,11 +116,13 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board) == true && turn_count != 9 do
+  until over?(board) == true do
     turn(board)
   end
-  if won?(board) == true
-    puts "Congratulations #{winner(board)}!"
+  if won?(board) == true && winner(board) == X
+    puts "Congratulations X!"
+  elsif won?(board) == true && winner(board) == O
+    puts "Congratulations O!"
   elsif draw? == true
     puts "Cat's Game!"
   end
