@@ -116,11 +116,10 @@ def winner(board)
 end
 
 def play(board)
-  turns = 0
-  until over?(board) == true || turns == 9 do
+  until over?(board) == true do
     turn(board)
-    turns += 1
-    if won?(board) == true
+  end
+  if won?(board) == true
       winner(board)
     end
   end
