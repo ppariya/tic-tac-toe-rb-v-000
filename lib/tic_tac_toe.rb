@@ -121,5 +121,5 @@ def play(board)
   until over?(board) == true do
     turn(board)
   end
-  
+
 end
