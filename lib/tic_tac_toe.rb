@@ -122,6 +122,6 @@ def play(board)
   if won?(board) == true
       winner(board)
     end
-  end
+  
 
 end
