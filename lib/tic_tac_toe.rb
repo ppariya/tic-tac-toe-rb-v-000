@@ -120,8 +120,9 @@ def play(board)
   until over?(board) == true do
     turn(board)
     turns += 1
+    if won?(board) == true
+      winner(board)
+    end
   end
-  if won?(board) == true
-    winner(board)
-  end
+  
 end
